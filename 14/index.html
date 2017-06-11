@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Изучение jQuery 14 пример</title>
+    </head>
+<body>
+    <h1>What is Lorem Ipsum?</h1>
+
+    <form name="myForm" action="" onsubmit="return validateForm()" method="post">
+        Ваше имя:<br/> <input type="text" name="name"><br/><br/>
+        Ваш телефон:<br/> <input type="text" name="tel"><br/><br/>
+        Ваш email:<br/> <input type="text" name="email"><br/><br/>
+        <input type="submit" value="Submit">
+    </form>
+    <!-- Можно без return -->
+    <script>
+            function validateForm() {
+                var name = document.forms["myForm"]["name"].value;
+                var tel = document.forms["myForm"]["tel"].value;
+                var email = document.forms["myForm"]["email"].value;
+                if ( name == ""){
+                    alert("Имя должно быть введено");
+                    return false;
+                } else if (tel == ""){
+                    alert("Телефон должен быть введен");
+                    return false;
+                } else if(email == "" ){
+                    alert("Емеил должен быть введен");
+                    return false;
+                }
+            }
+    </script>
+</body>
+</html>

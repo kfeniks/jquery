@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Изучение JavaScript 11 пример</title>
+    </head>
+<body>
+<h1>What is Lorem Ipsum?</h1>
+    <script>
+        //Создание конструктора объектов
+
+        function Fruit (color, shape) {
+            this.color = color;
+            this.shape = shape;
+        }
+
+        var apple = new Fruit('yellow', 'round');
+
+//        var apple = new Object ();
+//        apple.color = 'green';
+//        apple.shape = 'round';
+
+        apple.describe = function () {
+            return 'An apple is ' + this.color + ' and is ' + this.shape + '.';
+        }
+
+            // console.log (apple.color);
+        console.log ( apple.describe() );
+
+        //Cоздание объектов
+//        var person = {
+//            firstName: 'Brad',
+//            lastName: 'Gorovolich',
+//            age: 45,
+//            children: ['Lisa', 'Perya'],
+//            adress: {
+//                street: '555 Some st',
+//                city: 'Boston',
+//                state: 'MA'
+//            },
+//            Name: function(){
+//                return this.firstName + " " + this.lastName + ", " + this.adress.street;
+//            }
+//        }
+//        console.log ( person.Name() );
+
+        //Функции
+//       function write(word){
+//           document.write (word);
+//       }
+//       function summ (a, b){
+//           return a + b;
+//       }
+//
+//       write ("Hello");
+//       write("<br/>");
+//       var c = summ (23, 34);
+//       write(c);
+    </script>
+</body>
+</html>

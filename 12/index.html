@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Изучение JavaScript 12 пример</title>
+    </head>
+<body>
+<h1>What is Lorem Ipsum?</h1>
+<p id="text">Какой-нибудь текст...</p>
+<button onclick="changeColor('blue');">Синий</button>
+<button onmouseover="changeColor('red');">Красный</button>
+    <script>
+    function changeColor(newColor) {
+        var element = document.getElementById('text');
+        element.style.color = newColor;
+    }
+    </script>
+</body>
+</html>
