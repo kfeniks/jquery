@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <title>Изучение jQuery 16 пример</title>
+    </head>
+<body>
+    <h1>What is Lorem Ipsum?</h1>
+
+    <div class="test">Test 1</div>
+    <div class="test">Test 2</div>
+    <div class="test">Test 3</div>
+    <div class="test">Test 4</div>
+    <p class="test">Test 5</p>
+
+    <img src="../img/woman5.png" alt="woman5" />
+    <img src="../img/woman8.png" alt="woman8" title="woman8" />
+
+    <script type="text/javascript">
+        var test = $('div');
+        alert(test.length);
+
+        var img = $("img[title]");
+        alert(img.length);
+    </script>
+</body>
+</html>

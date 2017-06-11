@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <title>Изучение jQuery 15 пример</title>
+    </head>
+<body>
+    <h1>What is Lorem Ipsum?</h1>
+
+    <div class="test">Test 1</div>
+    <div class="test">Test 2</div>
+    <p class="test">Test 3</p>
+
+    <script type="text/javascript">
+        var test = $('div.test');
+        for(var i = 0; i < test.length; i++){
+            test.get(i).style.color = "red";
+        }
+        setTimeout("$('p.test').get(0).style.color = 'green'", 2000);
+    </script>
+</body>
+</html>

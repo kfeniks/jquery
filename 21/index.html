@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <title>Изучение jQuery 21 пример</title>
+</head>
+<body>
+            <div id="test">Text</div>
+
+            <script type="text/javascript">
+                 $("#test").css("font-size", "25px");
+                 $("#test").css("color", "red");
+
+                 $("#test").css("background-color", function () {
+                     return "blue";
+                 });
+
+                 $("#test").css("width", "350px");
+                 $("#test").css("height", function(){
+                     var height = prompt("Введите высоту: ");
+                     return height + "px";
+                 });
+            </script>
+</body>
+</html>

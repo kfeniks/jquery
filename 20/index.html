@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <title>Изучение jQuery 20 пример</title>
+
+    <style>
+        .div1{
+         background-color: aqua;
+        }
+        .div2{
+         background-color: darkmagenta;
+        }
+    </style>
+</head>
+<body>
+            <div id="test">Text</div>
+
+            <script type="text/javascript">
+                   var div = prompt("1 или 2?");
+                   // если if, то умрет через 2 раза
+                   while(div !=1 && div != 2){
+                       alert("Введите число 1 или 2");
+                       div = prompt("1 или 2?");
+                   }
+                   $("#test").attr("class", "div" + div);
+                   alert($("#test").get(0).className);
+            </script>
+</body>
+</html>
