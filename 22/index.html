@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <title>Изучение jQuery 22 пример</title>
+</head>
+<body>
+            <div id="div">
+                Блок
+                <p>Абзац</p>
+            </div>
+
+            <script type="text/javascript">
+                alert($("div").html());
+                alert($("div").text());
+
+                $("p").html("<p>Новый абзац</p>");
+            </script>
+</body>
+</html>

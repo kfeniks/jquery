@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <title>Изучение jQuery 24 пример</title>
+</head>
+<body>
+            <div id="div">
+                <p>Абзац</p>
+            </div>
+            <div id="div2"></div>
+            <img src="1.png" alt="" /><br/>
+            <img src="2.png" alt="" /><br/>
+            <img src="3.png" alt="" /><br/>
+
+            <a href="#">1</a><br/>
+            <a href="#">2</a>
+
+            <script type="text/javascript">
+                $("div").append("<span>Простой текст</span>");
+                $("img").appendTo($("#div2"));
+
+                $("a").wrap("<p style='display:none'></p>");
+            </script>
+</body>
+</html>
