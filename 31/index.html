@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <title>Изучение jQuery 31 пример</title>
+
+    <script type="text/javascript">
+            $(document).ready(function () {
+                    $("#img").bind("click", function (event) {
+                        $(event.target).parent().css("text-align", "center");
+                        $(event.target).animate({
+                                width: $(event.target).width() * 5,
+                                height: $(event.target).height() * 5,
+                            }, 3000);
+                    });
+                }
+            );
+     </script>
+</head>
+<body>
+            <p id="test">
+                <img src="http://n1s2.elle.ru/48/7b/36/487b36300c62c5f0cb905da52aa874b4/940x627_1_5a0bfdc1ca88097a61d2d64668c61ef9@940x627_0xc0a839a4_18087198581488362059.jpeg"
+                alt="Изображение" title="Изображение" id="img" width="200" />
+            </p>
+</body>
+</html>

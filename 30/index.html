@@ -7,14 +7,14 @@
 
     <script type="text/javascript">
                 function hideComments () {
-                    $("#comments").hide(1000, function () {
+                    $("#comments").slideUp(1000, function () {
                         $("#hide").hide();
                         $("#show").show();
                     });
                 }
 
                 function showComments () {
-                    $("#comments").show(1000, function () {
+                    $("#comments").slideDown(1000, function () {
                         $("#hide").show();
                         $("#show").hide();
                     });
