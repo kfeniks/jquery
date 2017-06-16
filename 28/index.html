@@ -6,7 +6,20 @@
     <title>Изучение jQuery 28 пример</title>
 
     <script type="text/javascript">
+            $(document).ready( function () {
+               $(document).on("click", "#add_comment", function(){
+                   var form = $("form[name='form']");
+                   form.css("display", "block");
+                   $("#add_comment").replaceWith(form);
+               });
 
+               $(document).on("click", "input[name='send']", function () {
+                   var comment = $("textarea[name='comment']").val();
+                   //типа загрузка данных
+                   alert("Подождите, идет загрузка комментария...");
+                   $("<p>" + comment + "</p>").appendTo("#comments");
+               });
+            });
      </script>
 </head>
 <body>
@@ -18,11 +31,12 @@
 
             </div>
 
-            <form name="form" id="form" style="display:none" onsubmit="return false">
-                <textarea></textarea>
+            <form name="form" id="form" method="post" action="#" onsubmit="return false" style="display:none">
+                <textarea id="textarea" name="comment" cols="30" rows="10"></textarea><br/>
+                <input name="send" type="submit" id="done" onclick="submit" value="Добавить комментарий" />
             </form>
 
-            <a href="#" onclick="submit" value="Добавить комментарий" id="done">Добавить комментарий</a>
+            <a href="#" onclick="return false" id="add_comment">Добавить комментарий</a>
 
 </body>
 </html>
